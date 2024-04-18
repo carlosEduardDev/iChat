@@ -1,0 +1,39 @@
+.login {
+  background-color: rgb(48, 46, 46);
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  text-align: center;
+  width: 250px;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+.login__form {
+  input[type="text"] {
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  input[type="submit"] {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    width: 100%;
+
+    &:hover {
+      background-color: rgb(182, 182, 182);
+    }
+    &:disabled {
+      background-color: grey;
+      cursor: default;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+}

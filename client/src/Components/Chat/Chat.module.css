@@ -1,0 +1,105 @@
+.chat {
+  background-image: url("https://wallpapercave.com/wp/wp7130410.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 90dvh;
+  overflow-y: auto;
+  position: relative;
+  width: 500px;
+
+  @media (max-width: 850px) {
+    & {
+      height: 100dvh;
+      padding-bottom: 60px;
+      width: 100vw;
+    }
+  }
+}
+.chat__messagers {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding: 30px;
+
+  & div:first-child {
+    margin-top: auto;
+  }
+}
+.chat__userMessage {
+  align-self: self-end;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px 10px 0px 10px;
+  color: black;
+  max-width: 60%;
+  min-width: 50%;
+  padding: 0.5rem 1rem;
+  word-break: break-all;
+}
+.chat__otherMessage {
+  align-self: self-start;
+  background-color: rgb(37, 38, 43);
+  border-radius: 10px 10px 10px 0px;
+  color: rgb(255, 255, 255);
+  max-width: 60%;
+  min-width: 50%;
+  padding: 0.5rem 1rem;
+  word-break: break-all;
+}
+.chat__userMessage__user {
+  color: rgb(35, 100, 143);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.chat__otherMessage__user {
+  color: rgb(76, 195, 126);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.chat__message_bar {
+  align-items: center;
+  background-color: #333;
+  display: flex;
+  gap: 1rem;
+  height: 80px;
+  padding-inline: 1rem;
+  width: 100%;
+
+  input[type="text"] {
+    border-radius: 10px;
+    height: 30px;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  button {
+    background-color: transparent;
+    background-image: url("https://cdn-icons-png.flaticon.com/128/5264/5264505.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    border: none;
+    cursor: pointer;
+    filter: invert(100%);
+    height: 40px;
+    padding-right: 1rem;
+    width: 40px;
+  }
+  @media (max-width: 850px) {
+    & {
+      bottom: 0;
+      position: fixed;
+    }
+    input[type="text"] {
+      border-radius: 10px;
+      height: 40px;
+    }
+  }
+}
