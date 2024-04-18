@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Chat.module.css";
 import { useLocation, useNavigate } from "react-router";
-const websocket = new WebSocket("ws://localhost:8080");
+const websocket = new WebSocket("wss://ichat-w9bm.onrender.com/");
 
 const Chat = () => {
   const handleSubmit = (e: React.FormEvent) => {
