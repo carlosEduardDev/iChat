@@ -17,7 +17,7 @@ body {
   background-color: rgb(27, 26, 26);
   color: white;
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   justify-content: center;
   width: 100vw;
 }
