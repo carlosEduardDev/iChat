@@ -22,7 +22,7 @@ const Chat = () => {
     if (message)
       setTimeout(() => {
         mainRef.current?.scrollTo({
-          top: mainRef.current.scrollHeight + 450,
+          top: mainRef.current.scrollHeight,
           behavior: "smooth",
         });
       }, 50);
@@ -47,7 +47,7 @@ const Chat = () => {
   const navigate = useNavigate();
   React.useEffect(() => {
     if (location.state) null;
-    else navigate("/");
+    else navigate("https://chat-run.vercel.app/");
   }, []);
 
   const processMessage = ({ data }: { data: string }) => {
