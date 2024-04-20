@@ -1,0 +1,32 @@
+{
+  "background_color": "#1b1b1b",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "iChat",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "iChat",
+  "start_url": "https://chat-run.vercel.app",
+  "theme_color": "#1b1b1b",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/128/4439/4439019.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "id": "ichat",
+  "description": "Bate-papo em tempo real.",
+  "lang": "pt",
+  "categories": [
+    "entertainment",
+    "social"
+  ],
+  "display_override": [
+    "browser",
+    "fullscreen",
+    "window-controls-overlay",
+    "minimal-ui",
+    "standalone"
+  ]
+}
